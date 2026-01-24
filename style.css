@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(76, 88, 99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+#container {
+  position: relative;
+}
+
+
+#canvas {
+  background-color: white;
+  display: block;
+}
+
+
+#ui {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+#fps {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: black;
+  font-family: monospace;
+}
+
+#devtools {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  color: black;
+  font-family: monospace;
+  display: none;
+  pointer-events: none;
+}
+
+#healthbox {
+  position: absolute;
+  width: 320px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.078);
+  bottom: 23px;
+  left: 25px;
+  border-radius: 2px;
+}
+
+#healthportion {
+  position: absolute;
+  width: 295px;
+  height: 40px;
+  background-color: rgb(53, 255, 127);
+  border-radius: 5px;
+}
+
+#healthbar {
+  position: absolute;
+  width: 295px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.301);
+  bottom: 35px;
+  left: 35px;
+  border-radius: 5px;
+}
+
+#healthnumber{
+  position: absolute;
+  font-family: "Fugaz One", sans-serif;
+  font-size: 35px;
+  color: #acffcb;
+  right: 10px;
+  top: -4.5px;
+}
+
+#shieldbar {
+  position: absolute;
+  width: 280px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.301);
+  bottom: 85px;
+  left: 35px;
+  border-radius: 5px;
+}
+
+#shieldportion {
+  position: absolute;
+  width: 280px;
+  height: 25px;
+  background-color: rgb(52, 228, 255);
+  border-radius: 5px;
+}
+
+#shieldnumber{
+  position: absolute;
+  font-family: "Fugaz One", sans-serif;
+  font-size: 20px;
+  color: rgb(177, 245, 255);
+  right: 10px;
+  top: -2px;
+}
+
