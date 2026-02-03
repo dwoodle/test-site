@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(76, 88, 99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#container {
+  position: relative;
+}
+
+
+#canvas {
+  background-color: white;
+  display: block;
+}
+
+
+#ui {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+#fps {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: black;
+  font-family: monospace;
+}
+
+#devtools {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  color: black;
+  font-family: monospace;
+  display: none;
+  pointer-events: none;
+}
+
+#healthbox {
+  position: absolute;
+  width: 320px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.078);
+  bottom: 23px;
+  left: 25px;
+  border-radius: 2px;
+}
+
+#healthportion {
+  position: absolute;
+  width: 295px;
+  height: 40px;
+  background-color: rgb(53, 255, 127);
+  border-radius: 5px;
+}
+
+#healthbar {
+  position: absolute;
+  width: 295px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.301);
+  bottom: 35px;
+  left: 35px;
+  border-radius: 5px;
+}
+
+#healthnumber{
+  position: absolute;
+  font-family: "Fugaz One", sans-serif;
+  font-size: 35px;
+  color: #acffcb;
+  right: 10px;
+  top: -4.5px;
+}
+
+#shieldbar {
+  position: absolute;
+  width: 280px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.301);
+  bottom: 85px;
+  left: 35px;
+  border-radius: 5px;
+}
+
+#shieldportion {
+  position: absolute;
+  width: 280px;
+  height: 25px;
+  background-color: rgb(52, 228, 255);
+  border-radius: 5px;
+}
+
+#shieldnumber{
+  position: absolute;
+  font-family: "Fugaz One", sans-serif;
+  font-size: 20px;
+  color: rgb(177, 245, 255);
+  right: 10px;
+  top: -2px;
+}
+
+#menuicon {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  height: 45px;
+}
+
+#menu {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: auto;
+}
+
+#menubuttoncontainer {
+  background-color: rgba(0, 0, 0, 0.339);
+  width: 250px;
+  border-radius: 10px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px;
+}
+
+#menu {
+  display: none;
+}
+
+#menu.open {
+  display: flex;
+}
+
+.menubuttons1 {
+  position: relative;
+  width: 200px;
+  height: 55px;
+  border-style: solid;
+  border-radius: 6px;
+  font-family: "Fugaz One", sans-serif;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(52, 52, 52);
+  color: rgb(218, 218, 218);
+}
+
+.menubuttons1:hover {
+  background-color: rgb(77, 77, 77);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.menubuttons1:active {
+  background-color: rgb(88, 88, 88);
+  color: rgb(217, 217, 217);
+  cursor: pointer;
+}
+
